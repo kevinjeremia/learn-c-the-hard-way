@@ -20,6 +20,8 @@ int main()
 
     printf("Hi, this is my another name %s\n", another);
     char *stratt = &string_attempt[5];
+
+    printf("Index 5th in another: %c\n", another[5]);
     printf("Value of pointer another %p\n", (void *)another);
     printf("Value of pointer stratt %p\n", (void *)stratt);
     
