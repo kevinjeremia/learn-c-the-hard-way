@@ -1,9 +1,9 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -std=c99
+CFLAGS = -Wall -Wextra
 TARGET = program
 
 # List of source files
-SRC_FILES = pointers.c
+SRC_FILES = struct.c
 
 # List of object files
 OBJ_FILES = $(SRC_FILES:.c=.o)
