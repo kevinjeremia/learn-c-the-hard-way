@@ -3,6 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+// struct is basically a collection of data types (variables) 
+// that are stored in one block of memory, and you can access
+// each variable independently (just like a simple class in java)
 struct Person {
     char *name;
     int age;
