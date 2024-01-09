@@ -46,6 +46,13 @@ void Person_print(struct Person *who)
     printf("Weight: %d\n", who->weight);
 }
 
+
+struct Gift {
+        char *name;
+        int quantity;
+        int price;
+};
+
 int main()
 {
     struct Person *joe = Person_create("Joe Alex", 32, 64, 140);
@@ -68,6 +75,16 @@ int main()
 
     Person_destroy(joe);
     Person_destroy(frank);
+
+    struct Gift my_gift;
+    my_gift.name = "laptop";
+    my_gift.quantity = 1;
+    my_gift.price = 1500;
+
+    printf("She gave me %d %s yesterday.\nIt cost her $%d.\n", 
+            my_gift.quantity,
+            my_gift.name,
+            my_gift.price);
 
     return 0;
 }
