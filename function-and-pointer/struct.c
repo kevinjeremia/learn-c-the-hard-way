@@ -76,6 +76,7 @@ int main()
     Person_destroy(joe);
     Person_destroy(frank);
 
+    // initializing struct on the stack memory.
     struct Gift my_gift;
     my_gift.name = "laptop";
     my_gift.quantity = 1;

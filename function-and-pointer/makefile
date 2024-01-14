@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra
 TARGET = program
 
 # List of source files
-SRC_FILES = new_struct.c
+SRC_FILES = experiment.c
 
 # List of object files
 OBJ_FILES = $(SRC_FILES:.c=.o)
