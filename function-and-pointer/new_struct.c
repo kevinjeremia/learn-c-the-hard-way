@@ -31,6 +31,11 @@ struct Player *Create_player(char *sports, char *name, char *race, int age, int 
 
 void print_player(struct Player *player);
 
+typedef struct BassPlayer {
+    char *name;
+    int age;
+} BassPlayer;
+
 int main() {
 
     // create struct on the stack memory
@@ -48,11 +53,19 @@ int main() {
     print_player(malong);
 
     free(malong);
+
+    BassPlayer jaco = {
+        jaco.name = "Jaco Pastorius",
+        jaco.age = 38
+    };
+
+    printf("My name is %s, and I'm %d years old\n", jaco.name, jaco.age);
+
     return 0;
 }
 
 void print_player(struct Player *player) {
-    printf("Hi my name is %s, just turned %d years old, and I play %s for a living.\nI am %s descent.\nI am %d cm tall, and I weigh %d kg.",
+    printf("Hi my name is %s, just turned %d years old, and I play %s for a living.\nI am %s descent.\nI am %d cm tall, and I weigh %d kg.\n",
     player->name,
     player->age,
     player->sports,
